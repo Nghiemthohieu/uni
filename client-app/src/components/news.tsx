@@ -1,11 +1,6 @@
 import Image from "next/image"
 
 export default function News() {
-    const data = [
-        {
-
-        }
-    ]
     return (
         <div className="bg-[rgb(240,240,240)]">
             <div className="max-w-[1060px] mx-auto text-center p-[16px] grid gap-5">
