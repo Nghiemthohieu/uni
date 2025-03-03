@@ -4,6 +4,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 export default function Lecturer() {
     const lecturer = [
@@ -88,9 +89,9 @@ export default function Lecturer() {
                                                 <div className="w-[250px] absolute top-0 left-[50%]" style={{ transform: `translate(-50%, -50%)` }}>
                                                     <span className="box-border inline-block overflow-hidden size-auto aspect-square opacity-[1] m-0 relative max-w-full rounded-[50%] border-[10px] border-solid border-[rgb(240,240,240)]">
                                                         <span className="box-border block size-auto aspect-square opacity-[1] m-0 p-0 max-w-full border-none">
-                                                            <img src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0" />
+                                                            <Image src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0" />
                                                         </span>
-                                                        <img src={lecturers.Image} alt="avatar" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full" />
+                                                        <Image src={lecturers.Image} alt="avatar" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full" />
                                                     </span>
                                                 </div>
 

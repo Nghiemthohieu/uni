@@ -4,6 +4,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
 export default function Partner() {
     const datas = [
         {
@@ -40,9 +41,9 @@ export default function Partner() {
                                     <div className="py-[24px] shadow-[rgba(136,136,136,0.35)_0px_10px_40px_0px] ">
                                         <span className="box-border inline-block overflow-hidden size-auto bg-none opacity-[1] border-none p-0 m-0 relative max-w-full">
                                             <span className="box-border block size-auto bg-auto opacity-[1] border-none p-0 m-0 relative max-w-full">
-                                                <img src="/image/remove-bg2.png" alt="" className="block max-w-full size-auto bg-none opacity-[1] border-none p-0 m-0" />
+                                                <Image src="/image/remove-bg2.png" alt="" className="block max-w-full size-auto bg-none opacity-[1] border-none p-0 m-0" />
                                             </span>
-                                            <img src={data.img} alt="Partner-image" className="absolute inset-0 box-border p-0 border-none m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full"/>
+                                            <Image src={data.img} alt="Partner-image" className="absolute inset-0 box-border p-0 border-none m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full"/>
                                         </span>
                                     </div>
                                 </div>

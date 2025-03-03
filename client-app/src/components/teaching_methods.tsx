@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TeachingMethods({ course }: { course: string }) {
     const dataMap: Record<string, { img: string, content: string }[]> = {
         "4skill": [
@@ -58,9 +60,9 @@ export default function TeachingMethods({ course }: { course: string }) {
                         <div key={index} className="shadow-lg bg-[rgb(196,255,252)] mt-[16px] ml-[16px]" style={{ width: `${100 / datas.length}%` , maxWidth: '25%', marginLeft: datas.length <= 4 ? '64px' : undefined }}>
                             <span className="box-border inline-block overflow-hidden size-auto bg-none opacity-[1] border-none m-0 p-0 relative max-w-full">
                                 <span className="box-border block size-auto bg-auto opacity-[1] border-none m-0 p-0 max-w-full">
-                                    <img src="/image/remove-bg.png" alt="" className="block w-full size-auto bg-auto opacity-[1] border-none m-0 p-0"/>
+                                    <Image src="/image/remove-bg.png" alt="" className="block w-full size-auto bg-auto opacity-[1] border-none m-0 p-0"/>
                                 </span>
-                                <img src={data.img} alt="courses" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
+                                <Image src={data.img} alt="courses" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
                             </span>
                             <div className="p-[8px]">
                                 <p className="font-[400] text-[1rem] leading-[1.5] pl-[8px]">

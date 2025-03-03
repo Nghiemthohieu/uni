@@ -1,19 +1,20 @@
 'use client'
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function SlidesShow () {
     const slides = [
         {
-            imgSrc : '/image/475786889_1028591562628726_466323718988762663_n.jpg'
+            ImageSrc : '/image/475786889_1028591562628726_466323718988762663_n.jpg'
         },
         {
-            imgSrc : '/image/475832958_1028591602628722_3608868426054246080_n.jpg'
+            ImageSrc : '/image/475832958_1028591602628722_3608868426054246080_n.jpg'
         },
         {
-            imgSrc : '/image/475847270_1028591625962053_1653825087658122433_n.jpg'
+            ImageSrc : '/image/475847270_1028591625962053_1653825087658122433_n.jpg'
         },
         {
-            imgSrc : '/image/475901244_1028591585962057_3497042177469414244_n.jpg'
+            ImageSrc : '/image/475901244_1028591585962057_3497042177469414244_n.jpg'
         }
     ]
 
@@ -57,7 +58,7 @@ export default function SlidesShow () {
                         <div className="flex relative h-[520px] slideshow__content" style={{ left: `${currentIndex * -100}%`, height: '100%', width: 'calc(100% * 4)', margin: 'auto' }}>
                             {slides.map((pages, index) => (
                                 <div key={index} className="relative w-full text-center flex flex-col justifi-center items-center">
-                                    <img src={pages.imgSrc} alt={pages.imgSrc} className="h-[520px] object-cover relative z-10" draggable="false" style={{ objectFit: 'contain'}}/>
+                                    <Image src={pages.ImageSrc} alt={pages.ImageSrc} className="h-[520px] object-cover relative z-10" draggable="false" style={{ objectFit: 'contain'}}/>
                                     <div className="absolute inset-0 bg-black/30 backdrop-blur-lg z-0"></div>
                                 </div>
                             ))}

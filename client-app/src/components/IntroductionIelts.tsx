@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TargetCourse from "./target_course";
 import TeachingMethods from "./teaching_methods";
 
@@ -7,9 +8,9 @@ export default function IntroductionIelts() {
             <h1 className="uppercase text-[38px] font-bold text-[rgb(211,47,47)]" style={{fontFamily: "Roboto, Helvetica, Arial, sans-serif"}}>luyện thi toeic</h1>
             <span className="box-border inline-block overflow-hidden size-auto opacity-[1] m-0 p-0 relative max-w-full">
                 <span className="box-border block size-auto opacity-[1] m-0 p-0 max-w-full border-none relative">
-                    <img src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271200%27%20height=%27200%27/%3e" alt="" className="block w-full size-auto bg-transparent opacity-[1] border-none m-0 p-0"/>
+                    <Image src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271200%27%20height=%27200%27/%3e" alt="" className="block w-full size-auto bg-transparent opacity-[1] border-none m-0 p-0"/>
                 </span>
-                <img src="/image/toiec_target.webp" alt="" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
+                <Image src="/image/toiec_target.webp" alt="" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
             </span>
             <div className="grid gap-3">
                 <h4 className="text-[2.135rem] leading-[1.235] font-[600] text-[rgb(211,47,47)] mb-[16px]">Khóa hoc IELTS 0 - 3.0+</h4>

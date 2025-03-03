@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TargetCourse({ course }: { course: string }){
     const dataMap: Record<string, { img: string, content: string }[]> = {
         "4skill": [
@@ -96,7 +98,7 @@ export default function TargetCourse({ course }: { course: string }){
                     datas.map((data, index)=>(
                         <div key={index} className="bg-white mt-[16px] ml-[16px]" style={{ width: `${100 / datas.length}%`  , maxWidth: '25%', marginLeft: datas.length <= 4 ? '64px' : undefined }}>
                             <div className="w-full">
-                                <img src={data.img} alt="" className="w-full h-full rounded-[50%] border-[3px] border-dotted border-[#ff0000]"/>
+                                <Image src={data.img} alt="" className="w-full h-full rounded-[50%] border-[3px] border-dotted border-[#ff0000]"/>
                             </div>
                             <div className="p-[8px]">
                                 <p className="font-[400] text-[1rem] leading-[1.5] pl-[8px]">

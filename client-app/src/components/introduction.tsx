@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Introdution() {
     const Img = [
         {
@@ -30,9 +32,9 @@ export default function Introdution() {
                     <div key={index} className="basis-[95%] max-w-[95%] sm:basis-[48%] sm:w-[48%] mb-[30px] relative">
                         <span className="uppercase inline-block overflow-hidden size-auto bg-transparent opacity-[1] m-0 border-none p-0 relative w-[100%] cursor-pointer"> 
                             <span className="uppercase block size-auto aspect-square bg-transparent opacity-[1] m-0 border-none p-0 max-w-[100%]">
-                                <img src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
+                                <Image src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
                             </span>
-                            <img src={page.imgSrc} alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
+                            <Image src={page.imgSrc} alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
                         </span>
                         <div className="absolute text-white right-0 bottom-[-10px] bg-gradient-to-br from-red-500 to-orange-500">
                             <h5 className="uppercase m-0 text-[1.5rem] leading-[1.334] tracking-[0em] px-[16px] py-[8px] font-medium">{page.Course}</h5>

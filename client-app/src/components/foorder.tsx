@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Foorder() {
     const dataMaps = [
         { address: "Số 44 ngõ 40, Tạ Quang Bửu, Bách Khoa, Hà Nội" },
@@ -19,7 +21,7 @@ export default function Foorder() {
             
             {/* Logo & Giới thiệu */}
             <div className="col-span-12 md:col-span-1 lg:col-span-3 flex flex-col items-center text-center space-y-4">
-                <img src="/image/logo_footer.webp" alt="UNI-Image" className="w-32" />
+                <Image src="/image/logo_footer.webp" alt="UNI-Image" className="w-32" />
                 <p className="font-normal text-base leading-relaxed">
                     Uni English Center là trung tâm tiếng Anh hàng đầu
                 </p>

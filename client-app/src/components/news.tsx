@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function News() {
     const data = [
         {
@@ -16,9 +18,9 @@ export default function News() {
                             <div className="basis-[100%] w-[100%] relative flex-grow">
                                 <span className="uppercase inline-block overflow-hidden size-auto bg-transparent opacity-[1] m-0 border-none p-0 relative w-[100%]">
                                     <span className="uppercase block size-auto bg-transparent opacity-[1] m-0 border-none p-0 max-w-[100%]">
-                                        <img src="/image/remove-bg1.png" alt="" aria-hidden="true" className="block w-full size-auto bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
+                                        <Image src="/image/remove-bg1.png" alt="" aria-hidden="true" className="block w-full size-auto bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
                                     </span>
-                                    <img src="" alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
+                                    <Image src="" alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
                                 </span>
                             </div>
                             <div className="p-[16px] w-full text-left">

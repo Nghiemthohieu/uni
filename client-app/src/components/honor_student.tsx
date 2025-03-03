@@ -4,6 +4,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
 export default function HonorStudent() {
     const honor = [
         {
@@ -59,9 +60,9 @@ export default function HonorStudent() {
                                         <div className="basis-[100%] w-[100%] mb-[30px] relative flex-grow">
                                             <span className="uppercase inline-block overflow-hidden size-auto bg-transparent opacity-[1] m-0 border-none p-0 relative w-[100%]">
                                                 <span className="uppercase block size-auto aspect-square bg-transparent opacity-[1] m-0 border-none p-0 max-w-[100%]">
-                                                    <img src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
+                                                    <Image src="/image/remove-bg.png" alt="" aria-hidden="true" className="block w-full size-auto aspect-square bg-transparent opacity-[1] border-none m-0 p-0 cursor-pointer" />
                                                 </span>
-                                                <img src={honors.image} alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
+                                                <Image src={honors.image} alt="img" className="absolute inset-0 uppercase p-0 border-none m-auto block size-0 min-h-full max-h-full min-w-full max-w-full"/>
                                             </span>
                                             <div className="absolute text-white left-[-5px] bottom-[-10px] bg-gradient-to-br from-red-500 to-orange-500">
                                                 <h5 className="capitalize m-0 text-[1.25rem] leading-[1.334] tracking-[0em] px-[16px] py-[8px] font-medium">{honors.name}</h5>
